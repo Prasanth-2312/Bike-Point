@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const BikePoint = () => {
+const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const services = [
@@ -308,5 +308,4 @@ const BikePoint = () => {
     </div>
   );
 };
-
-export default BikePoint;
+export default App;
