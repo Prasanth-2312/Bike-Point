@@ -207,7 +207,7 @@ const BikePoint = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-24 px-4 md:px-12 max-w-3xl mx-auto">
+      <section className="py-24 px-4 md:px-12 max-w-3xl mx-auto border-gray-400 border rounded-4xl">
         <h2 className="text-4xl font-bold mb-12">Feel free to ask anything!</h2>
         <form className="space-y-6">
           <div>
@@ -215,15 +215,15 @@ const BikePoint = () => {
             <input 
               type="text" 
               placeholder="Enter your name" 
-              className="w-full px-4 py-4 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-amber-400 transition-all"
+              className="w-full px-4 py-4 rounded-xl border border-gray-400 outline-none focus:ring-2 focus:ring-amber-400 transition-all"
             />
           </div>
           <div>
-            <label className="block font-bold mb-2">Email</label>
+            <label className="block font-bold mb-2 ">Email</label>
             <input 
               type="email" 
               placeholder="Enter your email address" 
-              className="w-full px-4 py-4 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-amber-400 transition-all"
+              className="w-full px-4 py-4 rounded-xl border border-gray-400 outline-none focus:ring-2 focus:ring-amber-400 transition-all"
             />
           </div>
           <div>
@@ -231,10 +231,10 @@ const BikePoint = () => {
             <textarea 
               rows={4}
               placeholder="Enter your message" 
-              className="w-full px-4 py-4 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-amber-400 transition-all resize-none"
+              className="w-full px-4 py-4 rounded-xl border border-gray-400 outline-none focus:ring-2 focus:ring-amber-400 transition-all resize-none"
             ></textarea>
           </div>
-          <button className="w-full bg-amber-400 text-black font-bold py-4 rounded-xl hover:bg-amber-500 transition-colors shadow-lg shadow-amber-400/20">
+          <button className="w-full bg-amber-400 text-black font-bold py-4 rounded-xl hover:bg-black hover:text-white transition-colors shadow-lg shadow-amber-400/20">
             Submit
           </button>
         </form>
@@ -245,13 +245,10 @@ const BikePoint = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="space-y-6">
-              <div className="text-4xl font-black leading-none">
+              <div className="text-6xl font-black leading-none">
                 Bike<br />
                 <span className="text-amber-400">Point</span>
               </div>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                13, Thirumurugan Street, Balaji Nagar Anakaputhur, Chennai - 600070.
-              </p>
               <div className="space-y-2 text-sm font-medium">
                 <p>+91 6381565519 / 144455664445</p>
                 <p>info@bikepoint.com</p>
