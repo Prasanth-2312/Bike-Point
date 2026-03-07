@@ -86,7 +86,7 @@ const BikePoint = () => {
       )}
 
       {/* Hero Section */}
-      <section className="relative h-[600px] md:h-[700px] overflow-hidden bg-gray-900">
+      <section className="relative h-150 md:h-175 overflow-hidden bg-gray-900">
         <img 
           src="/images/bike1.png" 
           alt="Hero Bike" 
@@ -121,7 +121,7 @@ const BikePoint = () => {
             <input 
               type="email" 
               placeholder="Enter your email" 
-              className="bg-white px-4 py-3 rounded-lg flex-grow md:w-64 outline-none focus:ring-2 focus:ring-black/10"
+              className="bg-white px-4 py-3 rounded-lg grow md:w-64 outline-none focus:ring-2 focus:ring-black/10"
             />
             <button className="bg-black text-white px-6 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-gray-800 transition-colors">
               <Send size={18} />
@@ -179,7 +179,7 @@ const BikePoint = () => {
             <ChevronLeft />
           </button>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 flex-grow">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 grow">
             {shops.map((shop, index) => (
               <div key={index} className={`rounded-2xl overflow-hidden ${shop.featured ? 'bg-amber-400' : 'bg-white border border-gray-100'}`}>
                 <div className="p-4">
