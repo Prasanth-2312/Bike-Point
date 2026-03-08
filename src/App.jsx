@@ -43,7 +43,7 @@ const AppContent = () => {
       {!isAuthPage && <Footer />}
 
       {/* Bottom Yellow Bar */}
-      <div className="h-4 bg-amber-400 w-full"></div>
+      <div className="h-8 bg-amber-400 w-full"></div>
     </div>
   );
 };

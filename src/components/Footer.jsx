@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-gray-100 text-center text-xs text-gray-400">
+        <div className="pt-8 border-t border-gray-100 text-center text-xs text-gray-800">
           © {new Date().getFullYear()} Bike Point. All rights reserved.
         </div>
       </div>

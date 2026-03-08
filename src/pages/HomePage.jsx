@@ -195,7 +195,7 @@ const HomePage = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-24 px-4 md:px-12 max-w-3xl mx-auto border-gray-400 border rounded-4xl mb-20">
+      <section className="py-24 px-4 md:px-12 max-w-3xl mx-auto  shadow-2xl  rounded-4xl mb-20">
         <h2 className="text-4xl font-bold mb-12">Feel free to ask anything!</h2>
         
         {isSubmitted ? (

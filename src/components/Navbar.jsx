@@ -23,20 +23,20 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
       
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center gap-8 font-medium">
-        <button onClick={() => handleNavigate('/')} className="cursor-pointer hover:text-amber-400 hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all">Home</button>
-        <button className="cursor-pointer hover:text-amber-400 hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all">Service</button>
-        <button className="cursor-pointer hover:text-amber-400 hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all">Bikes</button>
-        <button className="cursor-pointer hover:text-amber-400 hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all">About us</button>
+        <button onClick={() => handleNavigate('/')} className="cursor-pointer hover:text-white hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all">Home</button>
+        <button className="cursor-pointer hover:text-white hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all">Service</button>
+        <button className="cursor-pointer hover:text-white hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all">Bikes</button>
+        <button className="cursor-pointer hover:text-white hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all">About us</button>
         <div className="h-6 w-px bg-black/20 mx-2"></div>
         <button 
           onClick={() => handleNavigate('/login')} 
-          className="cursor-pointer hover:text-amber-400 hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all"
+          className="cursor-pointer hover:text-white hover:bg-black hover:px-4 hover:py-2 hover:rounded-3xl transition-all"
         >
           Login
         </button>
         <button 
           onClick={() => handleNavigate('/register')} 
-          className="cursor-pointer bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 hover:scale-105 transition-all text-sm"
+          className="cursor-pointer bg-black text-white px-6 py-2 rounded-full hover:bg-white hover:text-black hover:scale-105 transition-all text-sm"
         >
           Register
         </button>

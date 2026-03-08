@@ -182,7 +182,7 @@ const RegisterPage = () => {
             </div>
           </div>
 
-          <button className="w-full bg-amber-400 text-black font-bold py-4 rounded-xl hover:bg-amber-500 transition-all shadow-lg shadow-amber-400/20 flex items-center justify-center gap-2 mt-4 cursor-pointer hover:scale-[1.02] active:scale-[0.98]">
+          <button className="w-full bg-amber-400 text-black font-bold py-4 rounded-xl hover:bg-black hover:text-white transition-all shadow-lg shadow-white flex items-center justify-center gap-2 mt-4 cursor-pointer hover:scale-[1.02] active:scale-[0.98]">
             Create Account <ArrowRight size={18} />
           </button>
 
@@ -191,7 +191,7 @@ const RegisterPage = () => {
             <button 
               type="button"
               onClick={() => navigate('/login')}
-              className="text-black font-bold hover:underline cursor-pointer hover:text-amber-600 transition-colors"
+              className="text-black font-bold hover:underline cursor-pointer hover:text-amber-400 transition-colors"
             >
               Login here
             </button>

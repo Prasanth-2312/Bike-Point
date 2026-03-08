@@ -117,10 +117,10 @@ const LoginPage = () => {
               <input type="checkbox" className="accent-amber-400 cursor-pointer" />
               <span className="group-hover:text-amber-600 transition-colors">Remember me</span>
             </label>
-            <button type="button" className="text-amber-600 font-bold hover:underline cursor-pointer hover:text-amber-700 transition-colors">Forgot password?</button>
+            <button type="button" className="text-black font-bold hover:underline cursor-pointer hover:text-amber-400 transition-colors">Forgot password?</button>
           </div>
 
-          <button className="w-full bg-amber-400 text-black font-bold py-4 rounded-xl hover:bg-amber-500 transition-all shadow-lg shadow-amber-400/20 flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02] active:scale-[0.98]">
+          <button className="w-full bg-amber-400 text-black font-bold py-4 rounded-xl hover:bg-black hover:text-white transition-all shadow-lg shadow-white flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02] active:scale-[0.98]">
             Login <ArrowRight size={18} />
           </button>
 
@@ -129,7 +129,7 @@ const LoginPage = () => {
             <button 
               type="button"
               onClick={() => navigate('/register')}
-              className="text-black font-bold hover:underline cursor-pointer hover:text-amber-600 transition-colors"
+              className="text-black font-bold hover:underline cursor-pointer hover:text-amber-400 transition-colors"
             >
               Register Now
             </button>
