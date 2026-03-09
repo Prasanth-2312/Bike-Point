@@ -120,7 +120,7 @@ const HomePage = () => {
       </div>
 
       {/* Services Section */}
-      <section className="py-24 px-4 md:px-12 max-w-7xl mx-auto">
+      <section className="py-24 px-4 md:px-12 max-w-7xl mx-100">
         <h2 className="text-4xl font-bold mb-12">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
@@ -195,7 +195,7 @@ const HomePage = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-24 px-4 md:px-12 max-w-3xl mx-auto  shadow-2xl  rounded-4xl mb-20">
+      <section className="py-24 px-4 md:px-12 max-w-3xl mx-auto shadow-2xl rounded-4xl mb-20">
         <h2 className="text-4xl font-bold mb-12">Feel free to ask anything!</h2>
         
         {isSubmitted ? (

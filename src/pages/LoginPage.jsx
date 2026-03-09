@@ -44,6 +44,7 @@ const LoginPage = () => {
     });
 
     await loginPromise;
+    navigate('/main');
   };
 
   return (

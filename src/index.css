@@ -1,1 +1,75 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+@import "leaflet-geosearch/dist/geosearch.css";
+@import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
+
+/* Google Maps Style Overrides */
+.leaflet-container {
+    background: #f8f9fa !important;
+}
+
+.glass-morphism {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.geosearch.bar {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 1000;
+    width: 400px;
+    max-width: calc(100vw - 48px);
+}
+
+.geosearch.bar form {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 4px 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.geosearch.bar form input {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #202124;
+}
+
+.geosearch.bar .results {
+    background: white;
+    border-radius: 16px;
+    margin-top: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+}
+
+.geosearch.bar .results > div {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f1f3f4;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.geosearch.bar .results > div:hover {
+    background: #f8f9fa;
+}
+
+/* Hide default routing panel to keep it clean like Google */
+.leaflet-routing-container {
+    background: white !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    margin: 24px !important;
+    padding: 16px !important;
+    font-family: 'Inter', sans-serif !important;
+    max-height: 400px;
+    overflow-y: auto;
+}

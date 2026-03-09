@@ -56,6 +56,7 @@ const RegisterPage = () => {
     });
 
     await registerPromise;
+    navigate('/main');
   };
 
   return (
