@@ -164,7 +164,7 @@ const CustomSearch = ({ onResult }) => {
   };
 
   return (
-    <div className="absolute top-6 left-6 z-[1001] w-72 md:w-96">
+    <div className="absolute top-6 left-6 z-1001 w-72 md:w-96">
       <div className="relative group">
         <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
           <SearchIcon size={18} className="text-gray-400 group-focus-within:text-amber-500 transition-colors" />
@@ -364,7 +364,7 @@ const MainPage = () => {
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -300, opacity: 0 }}
-            className="fixed md:relative z-[2000] w-72 h-full bg-white border-r border-gray-100 flex flex-col shadow-2xl md:shadow-none"
+            className="fixed md:relative z-2000 w-72 h-full bg-white border-r border-gray-100 flex flex-col shadow-2xl md:shadow-none"
           >
             <div className="p-6 border-b border-gray-100 flex justify-between items-center">
               <div>
@@ -376,7 +376,7 @@ const MainPage = () => {
               </button>
             </div>
 
-            <nav className="flex-grow p-4 space-y-2">
+            <nav className="grow p-4 space-y-2">
               <button 
                 onClick={() => {
                   setIsEditing(false);
@@ -400,7 +400,7 @@ const MainPage = () => {
                       <div key={shop.id} className="group flex items-center justify-between p-3 rounded-xl bg-gray-50 hover:bg-amber-50 transition-all">
                         <button 
                           onClick={() => selectShop(shop)}
-                          className="flex-grow text-left"
+                          className="grow text-left"
                         >
                           <p className="text-xs font-bold text-gray-800 truncate">{shop.name}</p>
                           <p className="text-[10px] text-amber-600 font-medium">{shop.type}</p>
@@ -485,19 +485,19 @@ const MainPage = () => {
       </AnimatePresence>
 
       {/* Main Content */}
-      <div className={`flex-grow w-full flex flex-col relative transition-all duration-500 ${isFullScreen ? 'p-0' : 'p-6'}`}>
+      <div className={`grow w-full flex flex-col relative transition-all duration-500 ${isFullScreen ? 'p-0' : 'p-6'}`}>
         {/* Toggle Sidebar Button */}
         {!isSidebarOpen && !isFullScreen && (
           <button 
             onClick={() => setIsSidebarOpen(true)}
-            className="absolute top-12 left-12 z-[1001] p-4 bg-white rounded-2xl shadow-xl hover:bg-gray-50 transition-all cursor-pointer border border-gray-100"
+            className="absolute top-12 left-12 z-1001 p-4 bg-white rounded-2xl shadow-xl hover:bg-gray-50 transition-all cursor-pointer border border-gray-100"
           >
             <ChevronRight size={24} className="text-amber-500" />
           </button>
         )}
 
         {/* Map Wrapper with specific dimensions */}
-        <div className={`relative flex-grow w-full overflow-hidden transition-all duration-500 ${isFullScreen ? 'rounded-none' : 'rounded-[2.5rem] shadow-2xl border-8 border-white'}`}>
+        <div className={`relative grow w-full overflow-hidden transition-all duration-500 ${isFullScreen ? 'rounded-none' : 'rounded-[2.5rem] shadow-2xl border-8 border-white'}`}>
           
           <CustomSearch onResult={handleSearchResult} />
 
@@ -507,7 +507,7 @@ const MainPage = () => {
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="absolute top-24 left-1/2 -translate-x-1/2 z-[1000] bg-black text-white px-6 py-3 rounded-full font-bold shadow-2xl flex items-center gap-3 border-2 border-amber-500"
+                className="absolute top-24 left-1/2 -translate-x-1/2 z-1000 bg-black text-white px-6 py-3 rounded-full font-bold shadow-2xl flex items-center gap-3 border-2 border-amber-500"
               >
                 <div className="w-2 h-2 bg-amber-500 rounded-full animate-ping"></div>
                 Click anywhere on map to set destination
@@ -522,7 +522,7 @@ const MainPage = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                className="absolute top-24 left-1/2 -translate-x-1/2 z-[2000] bg-black/80 backdrop-blur-md text-white px-8 py-4 rounded-full shadow-2xl flex items-center gap-4 border border-white/20"
+                className="absolute top-24 left-1/2 -translate-x-1/2 z-2000 bg-black/80 backdrop-blur-md text-white px-8 py-4 rounded-full shadow-2xl flex items-center gap-4 border border-white/20"
               >
                 <div className="w-3 h-3 bg-amber-400 rounded-full animate-pulse" />
                 <span className="text-sm font-black uppercase tracking-widest">Click on the map to set location</span>
@@ -597,7 +597,7 @@ const MainPage = () => {
                 }}
               >
                 <Popup>
-                  <div className="p-2 min-w-[150px]">
+                  <div className="p-2 min-w-37.5">
                     <div className="font-bold text-lg mb-1">{point.name}</div>
                     <div className="text-xs text-amber-600 font-bold uppercase mb-2">{point.type}</div>
                     <div className="text-xs text-gray-500 mb-3">{point.address}</div>
@@ -616,7 +616,7 @@ const MainPage = () => {
             ))}
 
             {/* Floating Controls */}
-            <div className="absolute top-6 right-6 z-[1000] flex flex-col gap-4">
+            <div className="absolute top-6 right-6 z-1000 flex flex-col gap-4">
               <button 
                 onClick={() => setIsFullScreen(!isFullScreen)}
                 className="p-4 bg-white rounded-2xl shadow-xl hover:bg-gray-50 transition-all cursor-pointer border border-gray-100 text-amber-500"
@@ -660,10 +660,10 @@ const MainPage = () => {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 100, opacity: 0 }}
-              className="absolute bottom-10 left-6 right-6 md:left-auto md:right-10 md:w-96 bg-white rounded-3xl shadow-2xl p-8 z-[1000] border border-gray-100"
+              className="absolute bottom-10 left-6 right-6 md:left-auto md:right-10 md:w-96 bg-white rounded-3xl shadow-2xl p-8 z-1000 border border-gray-100"
             >
               <div className="flex justify-between items-start mb-6">
-                <div className="flex-grow">
+                <div className="grow">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="px-3 py-1 bg-amber-100 text-amber-600 text-[10px] font-black rounded-full uppercase tracking-wider">
                       {selectedPoint.type}
